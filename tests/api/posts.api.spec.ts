@@ -148,8 +148,9 @@ test.describe('Posts API Tests', () => {
       };
       const response = await postsAPI.updatePost(postId, updatedPost);
 
-      // JSONPlaceholder currently throws a 500 when json-server tries to read the missing record (see logs)
-      expect([200, 404, 500]).toContain(response.status);
+      // JSONPlaceholder sometimes returns 200/404, but can currently bubble a 500 when the json-server handler hits a missing record
+      const acceptableStatuses = [200, 404, 500];
+      expect(acceptableStatuses).toContain(response.status);
     });
   });
 
