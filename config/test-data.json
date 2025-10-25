@@ -1,0 +1,22 @@
+{
+  "api": {
+    "maxResponseTime": 500,
+    "retryAttempts": 3,
+    "retryDelay": 1000
+  },
+  "testIds": {
+    "validPostId": 1,
+    "validUserId": 1,
+    "validCommentId": 1,
+    "validTodoId": 1,
+    "invalidId": 9999
+  },
+  "performance": {
+    "maxResponseTime": 500,
+    "criticalResponseTime": 1000
+  },
+  "pagination": {
+    "defaultPageSize": 10,
+    "maxPageSize": 100
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "api-playwright",
+  "version": "1.0.0",
+  "description": "Playwright API Test Automation Framework for JSONPlaceholder API",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:api": "playwright test tests/api",
+    "test:e2e": "playwright test tests/e2e",
+    "test:integration": "playwright test --grep @integration",
+    "test:performance": "playwright test --grep @performance",
+    "test:parallel": "playwright test --workers=4",
+    "test:sequential": "playwright test --workers=1",
+    "report": "playwright show-report",
+    "report:allure": "allure generate allure-results --clean -o allure-report",
+    "report:allure:open": "allure open allure-report",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf test-results playwright-report allure-results allure-report reports logs",
+    "pretest": "npm run type-check"
+  },
+  "keywords": [
+    "playwright",
+    "api-testing",
+    "automation",
+    "testing",
+    "typescript",
+    "test-framework"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "ajv": "^8.17.1",
+    "allure-playwright": "^3.4.1",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.38.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  }
+}

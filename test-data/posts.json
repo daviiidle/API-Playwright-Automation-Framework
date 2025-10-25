@@ -1,0 +1,17 @@
+[
+  {
+    "userId": 1,
+    "title": "Test Post 1",
+    "body": "This is a test post body for automated testing purposes."
+  },
+  {
+    "userId": 2,
+    "title": "Test Post 2",
+    "body": "This is another test post body with different content."
+  },
+  {
+    "userId": 1,
+    "title": "Valid Post Title",
+    "body": "Valid post body with sufficient content for testing."
+  }
+]

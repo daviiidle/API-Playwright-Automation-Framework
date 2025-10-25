@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+playwright-report
+test-results
+allure-results
+allure-report
+reports
+coverage
+*.log
+package-lock.json

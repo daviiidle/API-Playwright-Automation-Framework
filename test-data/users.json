@@ -1,0 +1,29 @@
+[
+  {
+    "name": "John Doe",
+    "username": "johndoe",
+    "email": "john.doe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "suite": "Apt 1",
+      "city": "New York",
+      "zipcode": "10001",
+      "geo": {
+        "lat": "40.7128",
+        "lng": "-74.0060"
+      }
+    },
+    "phone": "555-0100",
+    "website": "johndoe.com",
+    "company": {
+      "name": "Doe Inc",
+      "catchPhrase": "Innovative solutions",
+      "bs": "synergize scalable deliverables"
+    }
+  },
+  {
+    "name": "Jane Smith",
+    "username": "janesmith",
+    "email": "jane.smith@example.com"
+  }
+]
